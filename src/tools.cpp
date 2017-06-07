@@ -36,7 +36,7 @@ VectorXd Tools::CalculateRMSE(const vector<VectorXd> &estimations,
     rmse += residual;
   }
 
-  
+
   //calculate the mean
   rmse = rmse/estimations.size();
   //calculate the squared root
@@ -50,7 +50,6 @@ VectorXd Tools::CalculateRMSE(const vector<VectorXd> &estimations,
 
 
 MatrixXd Tools::CalculateJacobian(const VectorXd& x_state) {
-
   MatrixXd Hj(3,4);
 
 
